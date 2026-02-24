@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Haidar Azka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Mencegah seleksi teks pada gambar */
+        .no-select {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="container mx-auto max-w-6xl px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold text-teal-600">Haidar.</span>
+            <div class="hidden md:flex gap-8 font-medium">
+                <a href="#home" class="hover:text-teal-500 transition">Beranda</a>
+                <a href="#about" class="hover:text-teal-500 transition">Tentang</a>
+                <a href="#assignments" class="hover:text-teal-500 transition">Penugasan</a>
+                <a href="#projects" class="hover:text-teal-500 transition">Proyek</a>
+                <a href="#contact" class="hover:text-teal-500 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 lg:pt-48">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="flex flex-col-reverse lg:flex-row items-center gap-12">
+                <div class="w-full lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-4xl lg:text-6xl font-extrabold leading-tight">
+                        Halo 👋, saya <br>
+                        <span class="text-teal-500">Haidar Azka</span>
+                    </h1>
+                    <p class="mt-6 text-slate-500 text-lg mb-8 leading-relaxed">
+                        Mahasiswa yang tertarik pada bidang <strong>analisis data dan data mining</strong>. 
+                        Senang mengubah data mentah menjadi insight yang bermakna untuk pengambilan keputusan.
+                    </p>
+                    <a href="#contact" class="inline-block font-semibold text-white bg-teal-500 py-4 px-10 rounded-full hover:shadow-lg hover:bg-teal-600 transition duration-300">
+                        Hubungi Saya
+                    </a>
+                </div>
+                
+                <div class="w-full lg:w-1/2 flex justify-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-teal-500 rounded-full blur opacity-25"></div>
+                        <div class="absolute inset-0 z-10 rounded-full" oncontextmenu="return false;"></div>
+                        <img src="photo.jpeg" alt="profile" 
+                             draggable="false"
+                             class="no-select relative w-56 lg:w-80 h-56 lg:h-80 object-cover rounded-full border-4 border-white shadow-2xl">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto max-w-6xl px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 border-b-4 border-teal-500 w-fit">Tentang Saya</h2>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Saya memiliki antusiasme tinggi dalam dunia data. Fokus utama saya adalah mengeksplorasi pola-pola tersembunyi dalam dataset dan memvisualisasikannya agar mudah dipahami oleh audiens umum.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Saat ini saya sedang mendalami bahasa pemrograman Python untuk Data Science dan tools visualisasi seperti Tableau dan Power BI.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 border-b-4 border-teal-500 w-fit">Skill & Minat</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-teal-50 text-teal-700 rounded-lg font-medium border border-teal-100">Data Analysis</span>
+                        <span class="px-4 py-2 bg-teal-50 text-teal-700 rounded-lg font-medium border border-teal-100">Data Mining</span>
+                        <span class="px-4 py-2 bg-teal-50 text-teal-700 rounded-lg font-medium border border-teal-100">Python (Pandas)</span>
+                        <span class="px-4 py-2 bg-teal-50 text-teal-700 rounded-lg font-medium border border-teal-100">Machine Learning</span>
+                        <span class="px-4 py-2 bg-teal-50 text-teal-700 rounded-lg font-medium border border-teal-100">SQL</span>
+                        <span class="px-4 py-2 bg-teal-50 text-teal-700 rounded-lg font-medium border border-teal-100">C</span>
+                        <span class="px-4 py-2 bg-teal-50 text-teal-700 rounded-lg font-medium border border-teal-100">JavaScript</span>
+                        <span class="px-4 py-2 bg-teal-50 text-teal-700 rounded-lg font-medium border border-teal-100">Java</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="assignments" class="py-24 bg-slate-100">
+        <div class="container mx-auto max-w-6xl px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Penugasan Perkuliahan</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="bg-teal-100 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-teal-600 font-bold">01</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Laporan Dokumen TOR</h3>
+                    <p class="text-slate-500 mb-6 text-sm">Hasil laporan analisis data dalam format PDF/Docs.</p>
+                    <a href="TORHaidar.docx" class="text-teal-600 font-semibold hover:underline flex items-center gap-2">
+                        Lihat Dokumen &rarr;
+                    </a>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="bg-teal-100 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-teal-600 font-bold">02</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Infografis Data</h3>
+                    <p class="text-slate-500 mb-6 text-sm">Visualisasi data dalam bentuk grafik yang menarik.</p>
+                    <div class="overflow-hidden rounded-lg relative">
+                        <div class="absolute inset-0 z-10" oncontextmenu="return false;"></div>
+                        <img src="Data_Science.png
+                        " alt="Infografis" 
+                             draggable="false"
+                             class="no-select hover:scale-110 transition duration-500">
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="bg-teal-100 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                        <span class="text-teal-600 font-bold">03</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Presentasi Video</h3>
+                    <p class="text-slate-500 mb-6 text-sm">Video penjelasan materi atau demo aplikasi.</p>
+                    <div class="aspect-video">
+    <iframe class="w-full h-full rounded-lg"
+        src="https://www.youtube.com/embed/-2Y42QlzEb0"
+        title="Presentasi Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-white">
+        <div class="container mx-auto max-w-6xl px-6">
+            <h2 class="text-3xl font-bold mb-12">Hasil Proyek</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <div class="absolute inset-0 z-10" oncontextmenu="return false;"></div>
+                    <img src="image.png" alt="Project 1" draggable="false" class="no-select w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8 text-white z-20">
+                        <h4 class="text-xl font-bold">Analisis Prediksi Pelanggan</h4>
+                        <p class="text-sm opacity-80">Menggunakan algoritma KNN.</p>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <div class="absolute inset-0 z-10" oncontextmenu="return false;"></div>
+                    <img src="lapangan.jpg" alt="Project 2" draggable="false" class="no-select w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8 text-white z-20">
+                        <h4 class="text-xl font-bold">Pembuatan Video Profil</h4>
+                        <p class="text-sm opacity-80">Menggaitkan Investor untuk pembangunan.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="container mx-auto max-w-6xl px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Mari Berteman</h2>
+            <p class="text-slate-400 mb-10">Hubungi saya melalui platform di bawah ini:</p>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-12">
+                <a href="https://github.com/hidarrazka" class="bg-slate-800 p-4 rounded-full hover:bg-teal-500 transition shadow-lg">GitHub</a>
+                <a href="https://www.instagram.com/hidarrazka/" class="bg-slate-800 p-4 rounded-full hover:bg-teal-500 transition shadow-lg">Instagram</a>
+                <a href="https://www.linkedin.com/in/haidar-azka-b2580930a/" class="bg-slate-800 p-4 rounded-full hover:bg-teal-500 transition shadow-lg">LinkedIn</a>
+            </div>
+            
+            <p class="text-slate-500 text-sm border-t border-slate-800 pt-8">
+                &copy; 2026 Haidar Azka. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+           
+        });
+    </script>
+
+</body>
+</html>
